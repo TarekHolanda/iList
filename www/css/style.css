@@ -1,1 +1,43 @@
 /* Empty. Add your own CSS if you like */
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.color-green {
+	color: green;
+}
+.margin-10px {
+	margin: 10px;
+}
+.item.item-stable, .item.item-light {
+	border-color: white !important;
+}
+.list-name {
+	max-width: 70%;
+	text-overflow: ellipsis;
+  	white-space: nowrap;
+  	overflow: hidden;
+}
+.platform-ios .bar-header {
+	padding-top: 50px;
+}
+.platform-ios .bar .title {
+	top: 15px;
+}
+.platform-ios .bar .title + .buttons {
+	top: 20px;
+}
+.platform-ios ion-content {
+	margin-top: 10px !important;
+}

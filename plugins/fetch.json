@@ -1,0 +1,10 @@
+{
+  "cordova-plugin-x-toast": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

@@ -1,0 +1,24 @@
+<ion-modal-view view-title="Adicionar Produto">
+    <ion-header-bar class="bar bar-header bar-dark">
+        <h1 class="title">Adicionar Produto</h1>
+        <button class="button button-dark" ng-click="addProductModal.hide()">
+            <i class="icon ion-close"></i>
+        </button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Nome do Produto</span>
+                <input type="text" placeholder="Produto..." ng-model="newProduct.name">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Preço do Produto</span>
+                <input type="number" placeholder="Preço..." ng-model="newProduct.price">
+            </label>
+        <button class="button button-dark button-large button-block"
+        style="margin: 10px; width: calc(100% - 20px);" ng-click="addProduct()"
+        ng-disabled="!newProduct.name || !newProduct.price">
+            Adicionar
+        </button>
+    </ion-content>
+</ion-modal-view>

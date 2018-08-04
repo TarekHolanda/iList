@@ -1,9 +1,21 @@
-<ion-view view-title="Account">
-  <ion-content>
-    <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
-    </ion-list>
-  </ion-content>
+<ion-view view-title="Histórico">
+    <ion-content class="text-center">
+        <ion-list>
+            <ion-item class="" ng-repeat="bill in bills | orderBy: 'start'" type="item-text-wrap"
+            ng-class="{'item-stable':$odd, 'item-light':$even}">
+                <h2>
+                    <span class="float-left list-name">
+                        {{bill.name}}, de {{bill.start}} à {{bill.end}}
+                    </span>
+                    <span class="float-right color-green">
+                        R$ {{bill.price | number: 2}}
+                    </span>
+                </h2>
+                <ion-option-button class="button-assertive" ng-click="deleteBill(bill, $index)">
+                    Remover
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+        <h1 ng-if="!bills.length">Não há conta no histórico</h1>
+    </ion-content>
 </ion-view>
