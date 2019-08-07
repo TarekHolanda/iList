@@ -6,7 +6,7 @@
     </ion-nav-buttons>
     <ion-content class="text-center">
         <ion-list ng-if="bill">
-            <ion-item class="" ng-repeat="conn in connection | orderBy: 'name'"
+            <ion-item class="" ng-repeat="conn in connection | orderBy: 'name'" ng-click="removeProductUnit(conn, $index)"
             type="item-text-wrap" ng-class="{'item-stable':$odd, 'item-light':$even}">
                 <h2>
                     <span class="float-left list-name">
